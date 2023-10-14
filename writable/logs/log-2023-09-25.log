@@ -1,0 +1,344 @@
+ERROR - 2023-09-25 15:38:23 --> mysqli_sql_exception: Unknown column 'locationid' in 'field list' in C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\Users\Suluh\Desktop\project\jobseeker-backend\app\Database\Seeds\Wilayah.php(7487): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...')
+#4 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\Wilayah->run()
+#5 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\Users\Suluh\Desktop\project\jobseeker-backend\spark(102): CodeIgniter\CLI\Console->run()
+#9 {main}
+ERROR - 2023-09-25 15:39:34 --> mysqli_sql_exception: Duplicate entry '1' for key 'cities.PRIMARY' in C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ci...', 0)
+#1 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ci...')
+#2 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ci...')
+#3 C:\Users\Suluh\Desktop\project\jobseeker-backend\app\Database\Seeds\Wilayah.php(12): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ci...')
+#4 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\Wilayah->run()
+#5 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\Users\Suluh\Desktop\project\jobseeker-backend\spark(102): CodeIgniter\CLI\Console->run()
+#9 {main}
+ERROR - 2023-09-25 15:42:30 --> mysqli_sql_exception: Duplicate entry '1' for key 'districts.PRIMARY' in C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `di...', 0)
+#1 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `di...')
+#2 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `di...')
+#3 C:\Users\Suluh\Desktop\project\jobseeker-backend\app\Database\Seeds\Wilayah.php(490): CodeIgniter\Database\BaseConnection->query('INSERT INTO `di...')
+#4 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\Wilayah->run()
+#5 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\Users\Suluh\Desktop\project\jobseeker-backend\spark(102): CodeIgniter\CLI\Console->run()
+#9 {main}
+ERROR - 2023-09-25 16:02:57 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'KANIE', 5495),
+            (67030, 'KANJILO', 5649),
+            (67031, 'KANNA ' at line 7030 in C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\Users\Suluh\Desktop\project\jobseeker-backend\app\Database\Seeds\desa.php(60023): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...')
+#4 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\Desa->run()
+#5 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\Users\Suluh\Desktop\project\jobseeker-backend\spark(102): CodeIgniter\CLI\Console->run()
+#9 {main}
+ERROR - 2023-09-25 16:05:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'KANIE', 5495),
+        (67030, 'KANJILO', 5649),
+        (67031, 'KANNA UTARA', ' at line 7030 in C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\Users\Suluh\Desktop\project\jobseeker-backend\app\Database\Seeds\desa2.php(20015): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...')
+#4 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\Desa2->run()
+#5 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\Users\Suluh\Desktop\project\jobseeker-backend\spark(102): CodeIgniter\CLI\Console->run()
+#9 {main}
+ERROR - 2023-09-25 16:10:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'KANIE', 5495),
+        (67030, 'KANJILO', 5649),
+        (67031, 'KANNA UTARA', ' at line 7030 in C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\Users\Suluh\Desktop\project\jobseeker-backend\app\Database\Seeds\desa3.php(11): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...')
+#4 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\Desa3->run()
+#5 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\Users\Suluh\Desktop\project\jobseeker-backend\spark(102): CodeIgniter\CLI\Console->run()
+#9 {main}
+ERROR - 2023-09-25 16:14:19 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'KANIE', 5495),
+        (67030, 'KANJILO', 5649),
+        (67031, 'KANNA UTARA', ' at line 7030 in C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\Users\Suluh\Desktop\project\jobseeker-backend\app\Database\Seeds\desa3.php(11): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...')
+#4 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\Desa3->run()
+#5 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\Users\Suluh\Desktop\project\jobseeker-backend\spark(102): CodeIgniter\CLI\Console->run()
+#9 {main}
+ERROR - 2023-09-25 16:15:06 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'KANIE', 5495),
+        (67030, 'KANJILO', 5649),
+        (67031, 'KANNA UTARA', ' at line 7030 in C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\Users\Suluh\Desktop\project\jobseeker-backend\app\Database\Seeds\desa3.php(11): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...')
+#4 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\Desa3->run()
+#5 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\Users\Suluh\Desktop\project\jobseeker-backend\spark(102): CodeIgniter\CLI\Console->run()
+#9 {main}
+ERROR - 2023-09-25 16:15:57 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'KANIE', 5495),
+        (67030, 'KANJILO', 5649),
+        (67031, 'KANNA UTARA', ' at line 2129 in C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\Users\Suluh\Desktop\project\jobseeker-backend\app\Database\Seeds\desa3.php(11): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...')
+#4 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\Desa3->run()
+#5 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\Users\Suluh\Desktop\project\jobseeker-backend\spark(102): CodeIgniter\CLI\Console->run()
+#9 {main}
+ERROR - 2023-09-25 16:16:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'KANIE', 5495),
+        (67030, 'KANJILO', 5649),
+        (67031, 'KANNA UTARA', ' at line 7030 in C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\Users\Suluh\Desktop\project\jobseeker-backend\app\Database\Seeds\desa3.php(11): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...')
+#4 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\Desa3->run()
+#5 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\Users\Suluh\Desktop\project\jobseeker-backend\spark(102): CodeIgniter\CLI\Console->run()
+#9 {main}
+ERROR - 2023-09-25 16:16:58 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'KANIE', 5495),
+        (67030, 'KANJILO', 5649),
+        (67031, 'KANNA UTARA', ' at line 7030 in C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\Users\Suluh\Desktop\project\jobseeker-backend\app\Database\Seeds\desa3.php(11): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...')
+#4 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\Desa3->run()
+#5 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\Users\Suluh\Desktop\project\jobseeker-backend\spark(102): CodeIgniter\CLI\Console->run()
+#9 {main}
+ERROR - 2023-09-25 16:17:57 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'KANIE', 5495),
+        (67030, 'KANJILO', 5649),
+        (67031, 'KANNA UTARA', ' at line 2767 in C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\Users\Suluh\Desktop\project\jobseeker-backend\app\Database\Seeds\desa3.php(11): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...')
+#4 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\Desa3->run()
+#5 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\Users\Suluh\Desktop\project\jobseeker-backend\spark(102): CodeIgniter\CLI\Console->run()
+#9 {main}
+ERROR - 2023-09-25 16:18:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'KANIE', 5495),
+        (67030, 'KANJILO', 5649),
+        (67031, 'KANNA UTARA', ' at line 2767 in C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\Users\Suluh\Desktop\project\jobseeker-backend\app\Database\Seeds\desa3.php(11): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...')
+#4 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\Desa3->run()
+#5 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\Users\Suluh\Desktop\project\jobseeker-backend\spark(102): CodeIgniter\CLI\Console->run()
+#9 {main}
+ERROR - 2023-09-25 16:18:59 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'KANIE', 5495),
+        (67030, 'KANJILO', 5649),
+        (67031, 'KANNA UTARA', ' at line 1503 in C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\Users\Suluh\Desktop\project\jobseeker-backend\app\Database\Seeds\desa3.php(11): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...')
+#4 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\Desa3->run()
+#5 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\Users\Suluh\Desktop\project\jobseeker-backend\spark(102): CodeIgniter\CLI\Console->run()
+#9 {main}
+ERROR - 2023-09-25 16:19:12 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'KANIE', 5495),
+        (67030, 'KANJILO', 5649),
+        (67031, 'KANNA UTARA', ' at line 438 in C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\Users\Suluh\Desktop\project\jobseeker-backend\app\Database\Seeds\desa3.php(11): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...')
+#4 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\Desa3->run()
+#5 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\Users\Suluh\Desktop\project\jobseeker-backend\spark(102): CodeIgniter\CLI\Console->run()
+#9 {main}
+ERROR - 2023-09-25 16:19:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'MAPPEDECENG', 5654),
+        (67566, 'MAPPESANGKA', 5678),
+        (67567, 'MAPP' at line 90 in C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\Users\Suluh\Desktop\project\jobseeker-backend\app\Database\Seeds\desa3.php(11): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...')
+#4 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\Desa3->run()
+#5 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\Users\Suluh\Desktop\project\jobseeker-backend\spark(102): CodeIgniter\CLI\Console->run()
+#9 {main}
+ERROR - 2023-09-25 16:19:40 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TALLANG', 5725),
+        (68581, 'TALLE', 5490),
+        (68582, 'TALLO', 5715),' at line 500 in C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\Users\Suluh\Desktop\project\jobseeker-backend\app\Database\Seeds\desa3.php(11): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...')
+#4 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\Desa3->run()
+#5 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\Users\Suluh\Desktop\project\jobseeker-backend\spark(102): CodeIgniter\CLI\Console->run()
+#9 {main}
+ERROR - 2023-09-25 16:19:50 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TALLANG', 5725),
+        (68581, 'TALLE', 5490),
+        (68582, 'TALLO', 5715),' at line 88 in C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\Users\Suluh\Desktop\project\jobseeker-backend\app\Database\Seeds\desa3.php(11): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...')
+#4 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\Desa3->run()
+#5 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\Users\Suluh\Desktop\project\jobseeker-backend\spark(102): CodeIgniter\CLI\Console->run()
+#9 {main}
+ERROR - 2023-09-25 16:19:58 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TALLANG', 5725),
+        (68581, 'TALLE', 5490),
+        (68582, 'TALLO', 5715),' at line 88 in C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\Users\Suluh\Desktop\project\jobseeker-backend\app\Database\Seeds\desa3.php(11): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...')
+#4 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\Desa3->run()
+#5 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\Users\Suluh\Desktop\project\jobseeker-backend\spark(102): CodeIgniter\CLI\Console->run()
+#9 {main}
+ERROR - 2023-09-25 16:22:36 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'MAPPEDECENG', 5654),
+        (67566, 'MAPPESANGKA', 5678),
+        (67567, 'MAPP' at line 7566 in C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\Users\Suluh\Desktop\project\jobseeker-backend\app\Database\Seeds\desa3.php(11): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...')
+#4 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\Desa3->run()
+#5 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\Users\Suluh\Desktop\project\jobseeker-backend\spark(102): CodeIgniter\CLI\Console->run()
+#9 {main}
+ERROR - 2023-09-25 16:22:52 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'MAPPEDECENG', 5654),
+        (67566, 'MAPPESANGKA', 5678),
+        (67567, 'MAPP' at line 541 in C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\Users\Suluh\Desktop\project\jobseeker-backend\app\Database\Seeds\desa3.php(11): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...')
+#4 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\Desa3->run()
+#5 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\Users\Suluh\Desktop\project\jobseeker-backend\spark(102): CodeIgniter\CLI\Console->run()
+#9 {main}
+ERROR - 2023-09-25 16:23:05 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'MAPPEDECENG', 5654),
+        (67566, 'MAPPESANGKA', 5678),
+        (67567, 'MAPP' at line 541 in C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\Users\Suluh\Desktop\project\jobseeker-backend\app\Database\Seeds\desa3.php(11): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...')
+#4 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\Desa3->run()
+#5 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\Users\Suluh\Desktop\project\jobseeker-backend\spark(102): CodeIgniter\CLI\Console->run()
+#9 {main}
+ERROR - 2023-09-25 16:23:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'MAPPEDECENG', 5654),
+        (67566, 'MAPPESANGKA', 5678),
+        (67567, 'MAPP' at line 541 in C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\Users\Suluh\Desktop\project\jobseeker-backend\app\Database\Seeds\desa3.php(11): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...')
+#4 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\Desa3->run()
+#5 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\Users\Suluh\Desktop\project\jobseeker-backend\spark(102): CodeIgniter\CLI\Console->run()
+#9 {main}
+ERROR - 2023-09-25 16:24:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'PALLAE', 5480),
+        (67882, 'PALLAMEANG', 5758),
+        (67883, 'PALLANGGA'' at line 857 in C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\Users\Suluh\Desktop\project\jobseeker-backend\app\Database\Seeds\desa3.php(11): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...')
+#4 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\Desa3->run()
+#5 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\Users\Suluh\Desktop\project\jobseeker-backend\spark(102): CodeIgniter\CLI\Console->run()
+#9 {main}
+ERROR - 2023-09-25 16:24:36 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'PALLAE', 5480),
+        (67882, 'PALLAMEANG', 5758),
+        (67883, 'PALLANGGA'' at line 857 in C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\Users\Suluh\Desktop\project\jobseeker-backend\app\Database\Seeds\desa3.php(11): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...')
+#4 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\Desa3->run()
+#5 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\Users\Suluh\Desktop\project\jobseeker-backend\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\Users\Suluh\Desktop\project\jobseeker-backend\spark(102): CodeIgniter\CLI\Console->run()
+#9 {main}

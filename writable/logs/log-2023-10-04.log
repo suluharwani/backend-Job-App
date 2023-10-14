@@ -1,0 +1,231 @@
+ERROR - 2023-10-04 07:38:02 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'jobseeker', 3306, '', 0)
+#1 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Validation\Validation.php(309): CodeIgniter\Validation\StrictRules\Rules->is_unique('Pekerjaan Paruh...', 'category', Array, NULL, 'category')
+#6 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('category', 'category', 'Pekerjaan Paruh...', Array, Array)
+#7 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Controller.php(150): CodeIgniter\Validation\Validation->run()
+#8 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\app\Controllers\Api\ApiCategory.php(24): CodeIgniter\Controller->validate(Array)
+#9 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\CodeIgniter.php(919): App\Controllers\Api\ApiCategory->create()
+#10 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiCategory))
+#11 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Validation\Validation.php(309): CodeIgniter\Validation\StrictRules\Rules->is_unique('Pekerjaan Paruh...', 'category', Array, NULL, 'category')
+#5 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('category', 'category', 'Pekerjaan Paruh...', Array, Array)
+#6 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Controller.php(150): CodeIgniter\Validation\Validation->run()
+#7 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\app\Controllers\Api\ApiCategory.php(24): CodeIgniter\Controller->validate(Array)
+#8 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\CodeIgniter.php(919): App\Controllers\Api\ApiCategory->create()
+#9 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiCategory))
+#10 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\...')
+#13 {main}
+CRITICAL - 2023-10-04 07:38:02 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `category`
+WHERE `category` = :category:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(309): CodeIgniter\Validation\StrictRules\Rules->is_unique('Pekerjaan Paruh Waktu', 'category', [...], null, 'category')
+ 5 SYSTEMPATH\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('category', 'category', 'Pekerjaan Paruh Waktu', [...], [...])
+ 6 SYSTEMPATH\Controller.php(150): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Api\ApiCategory.php(24): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ApiCategory->create()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiCategory))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\public\\index.php')
+ERROR - 2023-10-04 07:38:12 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'jobseeker', 3306, '', 0)
+#1 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Validation\Validation.php(309): CodeIgniter\Validation\StrictRules\Rules->is_unique('Pekerjaan Paruh...', 'category', Array, NULL, 'category')
+#6 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('category', 'category', 'Pekerjaan Paruh...', Array, Array)
+#7 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Controller.php(150): CodeIgniter\Validation\Validation->run()
+#8 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\app\Controllers\Api\ApiCategory.php(24): CodeIgniter\Controller->validate(Array)
+#9 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\CodeIgniter.php(919): App\Controllers\Api\ApiCategory->create()
+#10 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiCategory))
+#11 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Validation\Validation.php(309): CodeIgniter\Validation\StrictRules\Rules->is_unique('Pekerjaan Paruh...', 'category', Array, NULL, 'category')
+#5 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('category', 'category', 'Pekerjaan Paruh...', Array, Array)
+#6 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Controller.php(150): CodeIgniter\Validation\Validation->run()
+#7 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\app\Controllers\Api\ApiCategory.php(24): CodeIgniter\Controller->validate(Array)
+#8 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\CodeIgniter.php(919): App\Controllers\Api\ApiCategory->create()
+#9 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiCategory))
+#10 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\...')
+#13 {main}
+CRITICAL - 2023-10-04 07:38:12 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `category`
+WHERE `category` = :category:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(309): CodeIgniter\Validation\StrictRules\Rules->is_unique('Pekerjaan Paruh Waktu', 'category', [...], null, 'category')
+ 5 SYSTEMPATH\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('category', 'category', 'Pekerjaan Paruh Waktu', [...], [...])
+ 6 SYSTEMPATH\Controller.php(150): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Api\ApiCategory.php(24): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ApiCategory->create()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiCategory))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\public\\index.php')
+CRITICAL - 2023-10-04 08:41:37 --> Unclosed '[' on line 50 does not match ')'
+in APPPATH\Controllers\Api\ApiUser.php on line 59.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\app\\Controllers\\Api\\ApiUser.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Api\\ApiUser')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Api\\ApiUser')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Api\\ApiUser', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\public\\index.php')
+CRITICAL - 2023-10-04 09:00:46 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 1724.
+ 1 SYSTEMPATH\BaseModel.php(1724): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\BaseModel.php(748): CodeIgniter\BaseModel->transformDataToArray([], 'insert')
+ 3 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([], true)
+ 4 APPPATH\Controllers\Api\ApiJob.php(80): CodeIgniter\Model->insert([])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ApiJob->create()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\public\\index.php')
+CRITICAL - 2023-10-04 09:01:22 --> Call to undefined function App\Controllers\Api\vard_dump()
+in APPPATH\Controllers\Api\ApiJob.php on line 78.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ApiJob->create()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\public\\index.php')
+CRITICAL - 2023-10-04 09:04:54 --> syntax error, unexpected identifier "var_dump"
+in APPPATH\Controllers\Api\ApiJob.php on line 78.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\app\\Controllers\\Api\\ApiJob.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Api\\ApiJob')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Api\\ApiJob')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Api\\ApiJob', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\public\\index.php')
+CRITICAL - 2023-10-04 09:05:10 --> extract(): Argument #1 ($array) must be of type array, stdClass given
+in APPPATH\Controllers\Api\ApiJob.php on line 77.
+ 1 APPPATH\Controllers\Api\ApiJob.php(77): extract(Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ApiJob->create()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\public\\index.php')
+CRITICAL - 2023-10-04 16:52:16 --> Too few arguments to function CodeIgniter\Database\BaseConnection::table(), 0 passed in C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\app\Models\MdlJob.php on line 49 and exactly 1 expected
+in SYSTEMPATH\Database\BaseConnection.php on line 880.
+ 1 APPPATH\Models\MdlJob.php(49): CodeIgniter\Database\BaseConnection->table()
+ 2 APPPATH\Controllers\Api\ApiJob.php(89): App\Models\MdlJob->getJobDetail('1')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ApiJob->show('1')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\public\\index.php')
+CRITICAL - 2023-10-04 16:52:45 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::join()
+in APPPATH\Models\MdlJob.php on line 50.
+ 1 APPPATH\Controllers\Api\ApiJob.php(89): App\Models\MdlJob->getJobDetail('1')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ApiJob->show('1')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\public\\index.php')
+ERROR - 2023-10-04 17:03:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.`sub_category`
+FROM `job`
+LEFT JOIN `category` ON `job`.`cat_id` = `category`.`' at line 1 in C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `{$table...', 0)
+#1 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `{$table...')
+#2 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `{$table...')
+#3 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `{$table...', Array, false)
+#4 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\app\Models\MdlJob.php(80): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\app\Controllers\Api\ApiJob.php(89): App\Models\MdlJob->getJobDetail('1')
+#6 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\CodeIgniter.php(919): App\Controllers\Api\ApiJob->show('1')
+#7 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+#8 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\...')
+#11 {main}
+CRITICAL - 2023-10-04 17:03:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.`sub_category`
+FROM `job`
+LEFT JOIN `category` ON `job`.`cat_id` = `category`.`' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `{$table}`.`id`, `{$table}`.`company_id`, `{$table}`.`cat_id`, `{$table}`.`subcat_id`, `{$table}`.`prov_id`, `{$table}`.`city_id`, `{$table}`.`address`, `{$table}`.`postal_code`, `{$table}`.`job`, `{$table}`.`job_desc`, `{$table}`.`benefits`, `{$table}`.`minimum_qualification`, `{$table}`.`facility`, `{$table}`.`open_for`, `{$table}`.`salary_start`, `{$table}`.`salary_end`, `{$table}`.`status`, `{$table}`.`start`, `{$table}`.`due`, `{$table}`.`updated_at`, `{$table}`.`deleted_at`, `{$table}`.`created_at`, `category`.`category` `sub_category`.`sub_category`
+FROM `job`
+LEFT JOIN `category` ON `job`.`cat_id` = `category`.`id`
+LEFT JOIN `sub_category` ON `job`.`subcat_id` = `sub_category`.`id`
+WHERE `job`.`id` = :job.id:', [...], false)
+ 2 APPPATH\Models\MdlJob.php(80): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Api\ApiJob.php(89): App\Models\MdlJob->getJobDetail('1')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ApiJob->show('1')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\public\\index.php')
+ERROR - 2023-10-04 17:04:00 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.`sub_category`
+FROM `job`
+LEFT JOIN `category` ON `job`.`cat_id` = `category`.`' at line 1 in C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `{$table...', 0)
+#1 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `{$table...')
+#2 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `{$table...')
+#3 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `{$table...', Array, false)
+#4 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\app\Models\MdlJob.php(80): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\app\Controllers\Api\ApiJob.php(89): App\Models\MdlJob->getJobDetail('1')
+#6 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\CodeIgniter.php(919): App\Controllers\Api\ApiJob->show('1')
+#7 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+#8 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\...')
+#11 {main}
+CRITICAL - 2023-10-04 17:04:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.`sub_category`
+FROM `job`
+LEFT JOIN `category` ON `job`.`cat_id` = `category`.`' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `{$table}`.`id`, `{$table}`.`company_id`, `{$table}`.`cat_id`, `{$table}`.`subcat_id`, `{$table}`.`prov_id`, `{$table}`.`city_id`, `{$table}`.`address`, `{$table}`.`postal_code`, `{$table}`.`job`, `{$table}`.`job_desc`, `{$table}`.`benefits`, `{$table}`.`minimum_qualification`, `{$table}`.`facility`, `{$table}`.`open_for`, `{$table}`.`salary_start`, `{$table}`.`salary_end`, `{$table}`.`status`, `{$table}`.`start`, `{$table}`.`due`, `{$table}`.`updated_at`, `{$table}`.`deleted_at`, `{$table}`.`created_at`, `category`.`category` `sub_category`.`sub_category`
+FROM `job`
+LEFT JOIN `category` ON `job`.`cat_id` = `category`.`id`
+LEFT JOIN `sub_category` ON `job`.`subcat_id` = `sub_category`.`id`
+WHERE `job`.`id` = :job.id:', [...], false)
+ 2 APPPATH\Models\MdlJob.php(80): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Api\ApiJob.php(89): App\Models\MdlJob->getJobDetail('1')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ApiJob->show('1')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\public\\index.php')

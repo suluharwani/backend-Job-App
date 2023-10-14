@@ -1,0 +1,29 @@
+ERROR - 2023-10-05 03:49:44 --> mysqli_sql_exception: Column 'deleted_at' in where clause is ambiguous in C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `apply`....', 0)
+#1 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `apply`....')
+#2 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `apply`....')
+#3 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `apply`....', Array, false)
+#4 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\app\Models\MdlApply.php(135): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\app\Controllers\Api\ApiApplyJob.php(70): App\Models\MdlApply->getApplyDetail('id', '1')
+#6 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\CodeIgniter.php(919): App\Controllers\Api\ApiApplyJob->show('1')
+#7 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiApplyJob))
+#8 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\...')
+#11 {main}
+CRITICAL - 2023-10-05 03:49:44 --> Column 'deleted_at' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `apply`.`id`, `apply`.`id_user`, `apply`.`id_job`, `apply`.`updated_at`, `apply`.`deleted_at`, `apply`.`created_at`, `job`.`company_id`, `job`.`cat_id`, `job`.`subcat_id`, `job`.`prov_id`, `job`.`city_id`, `job`.`address`, `job`.`postal_code`, `job`.`job`, `job`.`job_desc`, `job`.`benefits`, `job`.`minimum_qualification`, `job`.`facility`, `job`.`open_for`, `job`.`salary_start`, `job`.`salary_end`, `job`.`status`, `job`.`start`, `job`.`due`, `user`.`firstname`, `user`.`lastname`, `user`.`email`, `user`.`level`, `user`.`status`
+FROM `apply`
+LEFT JOIN `job` ON `apply`.`id_job` = `job`.`id`
+LEFT JOIN `user` ON `apply`.`id_user` = `user`.`id`
+WHERE `apply`.`id` = :apply.id:
+AND `deleted_at` IS NULL', [...], false)
+ 2 APPPATH\Models\MdlApply.php(135): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Api\ApiApplyJob.php(70): App\Models\MdlApply->getApplyDetail('id', '1')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ApiApplyJob->show('1')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiApplyJob))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\public\\index.php')

@@ -1,0 +1,41 @@
+ERROR - 2023-10-14 14:36:19 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'jobseeker', 3306, '', 0)
+#1 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\app\Controllers\Api\ApiJob.php(16): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\CodeIgniter.php(919): App\Controllers\Api\ApiJob->index()
+#7 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+#8 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\app\Controllers\Api\ApiJob.php(16): CodeIgniter\Model->__call('get', Array)
+#5 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\CodeIgniter.php(919): App\Controllers\Api\ApiJob->index()
+#6 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+#7 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Suluh\Desktop\project\jobapp\Job-App\jobseeker-backend\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\...')
+#10 {main}
+CRITICAL - 2023-10-14 14:36:19 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `job`', [], false)
+ 3 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Api\ApiJob.php(16): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ApiJob->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\public\\index.php')

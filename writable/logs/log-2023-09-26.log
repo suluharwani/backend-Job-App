@@ -1,0 +1,145 @@
+CRITICAL - 2023-09-26 04:45:34 --> App\Controllers\Home::index(): Return value must be of type string, none returned
+in APPPATH\Controllers\Home.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\public\\index.php')
+CRITICAL - 2023-09-26 04:46:09 --> App\Controllers\Home::index(): Return value must be of type string, none returned
+in APPPATH\Controllers\Home.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\public\\index.php')
+CRITICAL - 2023-09-26 04:46:24 --> App\Controllers\Home::index(): Return value must be of type string, none returned
+in APPPATH\Controllers\Home.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\public\\index.php')
+CRITICAL - 2023-09-26 04:46:48 --> Undefined property: App\Controllers\Home::$lists
+in APPPATH\Controllers\Home.php on line 13.
+ 1 APPPATH\Controllers\Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$lists', 'C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\app\\Controllers\\Home.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\public\\index.php')
+CRITICAL - 2023-09-26 04:49:59 --> Cannot call constructor
+in APPPATH\Controllers\Home.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\public\\index.php')
+CRITICAL - 2023-09-26 04:52:36 --> Cannot call constructor
+in APPPATH\Controllers\Home.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\public\\index.php')
+CRITICAL - 2023-09-26 04:53:45 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 9.
+ 1 APPPATH\Controllers\Home.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\app\\Controllers\\Home.php', 9)
+ 2 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\public\\index.php')
+CRITICAL - 2023-09-26 05:00:00 --> Class "App\Libraries\Lists" not found
+in APPPATH\Controllers\Home.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\public\\index.php')
+CRITICAL - 2023-09-26 05:02:27 --> Class "App\Controllers\Lists" not found
+in APPPATH\Controllers\Home.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\public\\index.php')
+CRITICAL - 2023-09-26 05:03:11 --> Class "App\Libraries\Lists" not found
+in APPPATH\Controllers\Home.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\public\\index.php')
+CRITICAL - 2023-09-26 05:04:31 --> Undefined property: App\Controllers\Home::$router
+in APPPATH\Controllers\Home.php on line 17.
+ 1 APPPATH\Controllers\Home.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$router', 'C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\app\\Controllers\\Home.php', 17)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\public\\index.php')
+CRITICAL - 2023-09-26 05:08:15 --> Class "App\Controllers\Api\Users" not found
+in APPPATH\Controllers\Api\ApiUser.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ApiUser->create()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiUser))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\public\\index.php')
+CRITICAL - 2023-09-26 06:22:04 --> Class "App\Filters\JWTCI4" not found
+in APPPATH\Filters\AuthFilter.php on line 38.
+ 1 SYSTEMPATH\Filters\Filters.php(182): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('api/users/4', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\public\\index.php')
+CRITICAL - 2023-09-26 06:22:54 --> Class "App\Filters\JWTCI4" not found
+in APPPATH\Filters\AuthFilter.php on line 38.
+ 1 SYSTEMPATH\Filters\Filters.php(182): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('api/users/4', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\public\\index.php')
+CRITICAL - 2023-09-26 06:22:56 --> Class "App\Filters\JWTCI4" not found
+in APPPATH\Filters\AuthFilter.php on line 38.
+ 1 SYSTEMPATH\Filters\Filters.php(182): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('api/users/4', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\public\\index.php')
+CRITICAL - 2023-09-26 06:23:50 --> Class "App\Filters\JWTCI4" not found
+in APPPATH\Filters\AuthFilter.php on line 38.
+ 1 SYSTEMPATH\Filters\Filters.php(182): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('api/users/4', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\public\\index.php')
+CRITICAL - 2023-09-26 06:29:51 --> Undefined array key 2
+in APPPATH\Libraries\JWTCI4.php on line 86.
+ 1 APPPATH\Libraries\JWTCI4.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 2', 'C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\app\\Libraries\\JWTCI4.php', 86)
+ 2 APPPATH\Libraries\JWTCI4.php(64): App\Libraries\JWTCI4->getBearerToken([...])
+ 3 APPPATH\Filters\AuthFilter.php(39): App\Libraries\JWTCI4->parse(Object(CodeIgniter\HTTP\Header))
+ 4 SYSTEMPATH\Filters\Filters.php(182): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('api/users', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\public\\index.php')
+CRITICAL - 2023-09-26 06:29:56 --> Undefined array key 2
+in APPPATH\Libraries\JWTCI4.php on line 86.
+ 1 APPPATH\Libraries\JWTCI4.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 2', 'C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\app\\Libraries\\JWTCI4.php', 86)
+ 2 APPPATH\Libraries\JWTCI4.php(64): App\Libraries\JWTCI4->getBearerToken([...])
+ 3 APPPATH\Filters\AuthFilter.php(39): App\Libraries\JWTCI4->parse(Object(CodeIgniter\HTTP\Header))
+ 4 SYSTEMPATH\Filters\Filters.php(182): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('api/users', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\public\\index.php')
+CRITICAL - 2023-09-26 06:30:02 --> Undefined array key 2
+in APPPATH\Libraries\JWTCI4.php on line 86.
+ 1 APPPATH\Libraries\JWTCI4.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 2', 'C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\app\\Libraries\\JWTCI4.php', 86)
+ 2 APPPATH\Libraries\JWTCI4.php(64): App\Libraries\JWTCI4->getBearerToken([...])
+ 3 APPPATH\Filters\AuthFilter.php(39): App\Libraries\JWTCI4->parse(Object(CodeIgniter\HTTP\Header))
+ 4 SYSTEMPATH\Filters\Filters.php(182): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('api/users', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Suluh\\Desktop\\project\\jobapp\\Job-App\\jobseeker-backend\\public\\index.php')
