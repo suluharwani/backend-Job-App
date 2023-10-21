@@ -1,0 +1,82 @@
+ERROR - 2023-10-21 07:35:05 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'jobseeker', 3306, '', 0)
+#1 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\project\jobapp\Job-App\backend-Job-App\app\Controllers\Api\ApiJob.php(16): CodeIgniter\Model->__call('get', Array)
+#6 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\CodeIgniter.php(919): App\Controllers\Api\ApiJob->index()
+#7 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+#8 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\project\jobapp\Job-App\backend-Job-App\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\joba...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\project\jobapp\Job-App\backend-Job-App\app\Controllers\Api\ApiJob.php(16): CodeIgniter\Model->__call('get', Array)
+#5 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\CodeIgniter.php(919): App\Controllers\Api\ApiJob->index()
+#6 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+#7 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\project\jobapp\Job-App\backend-Job-App\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\joba...')
+#10 {main}
+CRITICAL - 2023-10-21 07:35:05 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `job`', [], false)
+ 3 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Api\ApiJob.php(16): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ApiJob->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\project\\jobapp\\Job-App\\backend-Job-App\\public\\index.php')
+ERROR - 2023-10-21 07:35:26 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'jobseeker', 3306, '', 0)
+#1 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\project\jobapp\Job-App\backend-Job-App\app\Controllers\Api\ApiJob.php(16): CodeIgniter\Model->__call('get', Array)
+#6 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\CodeIgniter.php(919): App\Controllers\Api\ApiJob->index()
+#7 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+#8 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\project\jobapp\Job-App\backend-Job-App\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\joba...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\project\jobapp\Job-App\backend-Job-App\app\Controllers\Api\ApiJob.php(16): CodeIgniter\Model->__call('get', Array)
+#5 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\CodeIgniter.php(919): App\Controllers\Api\ApiJob->index()
+#6 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+#7 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\project\jobapp\Job-App\backend-Job-App\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\joba...')
+#10 {main}
+CRITICAL - 2023-10-21 07:35:26 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `job`', [], false)
+ 3 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Api\ApiJob.php(16): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ApiJob->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\project\\jobapp\\Job-App\\backend-Job-App\\public\\index.php')
