@@ -31,7 +31,7 @@ class AuthController extends BaseController
 			}
 		}else{
 			
-			return $this->response->setJSON( ['success'=> false, 'message' => 'User not found' ] )->setStatusCode(409);
+			return $this->response->setJSON( ['success'=> false, 'message' => 'User not found' ] );
 		}
 		
 		
