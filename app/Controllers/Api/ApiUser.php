@@ -70,7 +70,7 @@ class ApiUser extends BaseController
 			'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
 			'firstname' => $this->request->getVar('firstname'),
 			'lastname' => $this->request->getVar('lastname'),
-			'level' => 1,
+			'level' => $this->request->getVar('level'),
 			'status' => 1,
 		];
 
