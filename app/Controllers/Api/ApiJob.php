@@ -31,35 +31,55 @@ class ApiJob extends BaseController
         ->findAll();
         return $this->respond($jobs);
     }
-	public function page()
-	{
-		$db = new MdlJob;
-		$page = $_GET['page'] ?? 1;
-		$size = $_GET['size'] ?? 3;
+public function page()
+{
+    $db = new MdlJob;
+    $page = $_GET['page'] ?? 1;
+    $size = $_GET['size'] ?? 3;
+    $s = $_GET['s'] ?? '';
 
-		$offset = ($page - 1) * $size;
+    $offset = ($page - 1) * $size;
 
-		$data = $db->orderBy('id', 'DESC')->paginate($size, 'default', $offset);
-		$totalElements = $db->countAll();
+    // Mengganti spasi dengan +
+    $s = str_replace('+', ' ', $s);
 
-		$number = ($page <= 0) ? null : $page;
-		$totalPages = ($size <= 0) ? null : ceil($totalElements / $size);
-		$firstPage = ($number === 1);
-		$lastPage = ($number === $totalPages);
-		//json response
-		$response = [
-			'data' => $data,
-			'pagination' => [
-				'page' => $page,
-				'size' => $size,
-				'totalElements' => $totalElements,
-				'number' => $number,
-				'firstPage' => $firstPage,
-				'lastPage' => $lastPage
-			]
-		];
-		return $this->respond(json_encode($response));
-	}
+    if ($s !== '') {
+    	// var_dump($s);die();
+        $data = $db
+            ->groupStart()
+                ->like('job', $s)
+                ->orLike('job_desc', $s)
+            ->groupEnd()
+            ->orderBy('id', 'DESC')->paginate($size, 'default', $offset);
+    } else {
+        $data = $db->orderBy('id', 'DESC')->paginate($size, 'default', $offset);
+    }
+
+    $totalElements = $db->countAll();
+
+    $number = ($page <= 0) ? null : $page;
+    $totalPages = ($size <= 0) ? null : ceil($totalElements / $size);
+    $firstPage = ($number === 1);
+    $lastPage = ($number === $totalPages);
+
+    //json response
+    $response = [
+        'data' => $data,
+        'pagination' => [
+            'page' => $page,
+            'size' => $size,
+            'totalElements' => $totalElements,
+            'number' => $number,
+            'totalPages' => $totalPages,
+            'firstPage' => $firstPage,
+            'lastPage' => $lastPage
+        ]
+    ];
+
+    return $this->respond(json_encode($response));
+}
+
+
 
 	public function create()
 	{

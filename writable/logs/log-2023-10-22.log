@@ -47,3 +47,95 @@ AND `job`.`deleted_at` IS NULL', [...], false)
  8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\project\\jobapp\\Job-App\\backend-Job-App\\public\\index.php')
+CRITICAL - 2023-10-22 07:51:41 --> syntax error, unexpected token "->", expecting identifier or variable or "{" or "$"
+in APPPATH\Controllers\Api\ApiJob.php on line 51.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\project\\jobapp\\Job-App\\backend-Job-App\\app\\Controllers\\Api\\ApiJob.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Api\\ApiJob')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Api\\ApiJob')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Api\\ApiJob', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\project\\jobapp\\Job-App\\backend-Job-App\\public\\index.php')
+CRITICAL - 2023-10-22 07:52:25 --> Undefined variable $keyword
+in APPPATH\Controllers\Api\ApiJob.php on line 48.
+ 1 APPPATH\Controllers\Api\ApiJob.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $keyword', 'D:\\project\\jobapp\\Job-App\\backend-Job-App\\app\\Controllers\\Api\\ApiJob.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\project\\jobapp\\Job-App\\backend-Job-App\\public\\index.php')
+ERROR - 2023-10-22 08:05:39 --> mysqli_sql_exception: Unknown column 'jobx' in 'where clause' in D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#6 D:\project\jobapp\Job-App\backend-Job-App\app\Controllers\Api\ApiJob.php(52): CodeIgniter\BaseModel->paginate(3, 'default', 1)
+#7 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+#8 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+#9 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\project\jobapp\Job-App\backend-Job-App\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\joba...')
+#12 {main}
+CRITICAL - 2023-10-22 08:05:39 --> Unknown column 'jobx' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `job`
+WHERE   (
+`jobx` LIKE :jobx: ESCAPE \'!\'
+OR  `job_desc` LIKE :job_desc: ESCAPE \'!\'
+ )
+AND `job`.`deleted_at` IS NULL', [...], false)
+ 2 SYSTEMPATH\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Api\ApiJob.php(52): CodeIgniter\BaseModel->paginate(3, 'default', 1)
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\project\\jobapp\\Job-App\\backend-Job-App\\public\\index.php')
+CRITICAL - 2023-10-22 08:06:34 --> syntax error, unexpected variable "$data"
+in APPPATH\Controllers\Api\ApiJob.php on line 48.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\project\\jobapp\\Job-App\\backend-Job-App\\app\\Controllers\\Api\\ApiJob.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Api\\ApiJob')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Api\\ApiJob')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Api\\ApiJob', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\project\\jobapp\\Job-App\\backend-Job-App\\public\\index.php')
+ERROR - 2023-10-22 08:07:39 --> mysqli_sql_exception: Unknown column 'jobx' in 'where clause' in D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#6 D:\project\jobapp\Job-App\backend-Job-App\app\Controllers\Api\ApiJob.php(53): CodeIgniter\BaseModel->paginate(3, 'default', 1)
+#7 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+#8 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+#9 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\project\jobapp\Job-App\backend-Job-App\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\joba...')
+#12 {main}
+CRITICAL - 2023-10-22 08:07:39 --> Unknown column 'jobx' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `job`
+WHERE   (
+`jobx` LIKE :jobx: ESCAPE \'!\'
+OR  `job_desc` LIKE :job_desc: ESCAPE \'!\'
+ )
+AND `job`.`deleted_at` IS NULL', [...], false)
+ 2 SYSTEMPATH\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Api\ApiJob.php(53): CodeIgniter\BaseModel->paginate(3, 'default', 1)
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\project\\jobapp\\Job-App\\backend-Job-App\\public\\index.php')
