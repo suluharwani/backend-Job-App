@@ -16,6 +16,21 @@ class ApiJob extends BaseController
 		$data = $db->get()->getResult();
 		return $this->response->setJSON(['sucess' => true, 'mesage' => 'OK', 'data' => $data]);
 	}
+	public function find()
+    {
+        $model = new MdlJob;
+
+        $keyword = $this->request->getVar('s'); // Ambil kata kunci pencarian dari request
+
+        // Lakukan pencarian berdasarkan kata kunci
+         $jobs = $model
+        ->groupStart()
+        ->like('job', $keyword)
+        ->orLike('job_desc', $keyword)
+        ->groupEnd()
+        ->findAll();
+        return $this->respond($jobs);
+    }
 	public function page()
 	{
 		$db = new MdlJob;

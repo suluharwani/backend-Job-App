@@ -67,5 +67,6 @@ $routes->group('api', ["filter" => ["cors"]], function ($routes) {
 	$routes->get('job', 'Api\ApiJob::index');
 	$routes->get('job/(:num)', 'Api\ApiJob::show/$1');
 	$routes->get('job/page', 'Api\ApiJob::page');
+	$routes->get('job/find', 'Api\ApiJob::find');
 
 });
