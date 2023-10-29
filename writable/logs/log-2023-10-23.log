@@ -1,0 +1,156 @@
+ERROR - 2023-10-23 04:41:47 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'jobseeker', 3306, '', 0)
+#1 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#6 D:\project\jobapp\Job-App\backend-Job-App\app\Controllers\Api\ApiJob.php(39): CodeIgniter\BaseModel->paginate(5, 'default', 1)
+#7 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+#8 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+#9 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\project\jobapp\Job-App\backend-Job-App\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\joba...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#5 D:\project\jobapp\Job-App\backend-Job-App\app\Controllers\Api\ApiJob.php(39): CodeIgniter\BaseModel->paginate(5, 'default', 1)
+#6 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+#7 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+#8 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\project\jobapp\Job-App\backend-Job-App\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\joba...')
+#11 {main}
+CRITICAL - 2023-10-23 04:41:47 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `job`
+WHERE   (
+`job` LIKE :job: ESCAPE \'!\'
+OR  `job_desc` LIKE :job_desc: ESCAPE \'!\'
+ )
+AND `job`.`deleted_at` IS NULL', [...], false)
+ 3 SYSTEMPATH\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH\Controllers\Api\ApiJob.php(39): CodeIgniter\BaseModel->paginate(5, 'default', 1)
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\project\\jobapp\\Job-App\\backend-Job-App\\public\\index.php')
+ERROR - 2023-10-23 04:56:47 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'jobseeker', 3306, '', 0)
+#1 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#6 D:\project\jobapp\Job-App\backend-Job-App\app\Controllers\Api\ApiJob.php(39): CodeIgniter\BaseModel->paginate(5, 'default', 1)
+#7 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+#8 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+#9 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\project\jobapp\Job-App\backend-Job-App\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\joba...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#5 D:\project\jobapp\Job-App\backend-Job-App\app\Controllers\Api\ApiJob.php(39): CodeIgniter\BaseModel->paginate(5, 'default', 1)
+#6 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+#7 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+#8 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\project\jobapp\Job-App\backend-Job-App\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\joba...')
+#11 {main}
+CRITICAL - 2023-10-23 04:56:47 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `job`
+WHERE   (
+`job` LIKE :job: ESCAPE \'!\'
+OR  `job_desc` LIKE :job_desc: ESCAPE \'!\'
+ )
+AND `job`.`deleted_at` IS NULL', [...], false)
+ 3 SYSTEMPATH\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH\Controllers\Api\ApiJob.php(39): CodeIgniter\BaseModel->paginate(5, 'default', 1)
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\project\\jobapp\\Job-App\\backend-Job-App\\public\\index.php')
+CRITICAL - 2023-10-23 07:16:50 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 214.
+ 1 FCPATH\index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-10-23 07:16:50 --> Uncaught Error: Class "Locale" not found in D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Helpers\number_helper.php:136
+Stack trace:
+#0 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Helpers\number_helper.php(55): format_number(6.0, 2, NULL, Array)
+#1 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Debug\BaseExceptionHandler.php(145): number_to_size(6.0, 2)
+#2 D:\project\jobapp\Job-App\backend-Job-App\app\Views\errors\html\error_exception.php(360): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(6291456)
+#3 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Debug\BaseExceptionHandler.php(241): include('D:\\project\\joba...')
+#4 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Debug\BaseExceptionHandler.php(244): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(109): CodeIgniter\Debug\BaseExceptionHandler->render(Object(Error), 500, 'D:\\project\\joba...')
+#6 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Debug\Exceptions.php(146): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#7 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#8 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 D:\project\jobapp\Job-App\backend-Job-App\public\index.php(67): CodeIgniter\CodeIgniter->initialize()
+#1 {main}
+in SYSTEMPATH\Helpers\number_helper.php on line 136.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-23 07:16:58 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 214.
+ 1 FCPATH\index.php(67): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-10-23 07:16:58 --> Uncaught Error: Class "Locale" not found in D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Helpers\number_helper.php:136
+Stack trace:
+#0 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Helpers\number_helper.php(55): format_number(6.0, 2, NULL, Array)
+#1 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Debug\BaseExceptionHandler.php(145): number_to_size(6.0, 2)
+#2 D:\project\jobapp\Job-App\backend-Job-App\app\Views\errors\html\error_exception.php(360): CodeIgniter\Debug\BaseExceptionHandler::describeMemory(6291456)
+#3 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Debug\BaseExceptionHandler.php(241): include('D:\\project\\joba...')
+#4 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Debug\BaseExceptionHandler.php(244): CodeIgniter\Debug\BaseExceptionHandler->CodeIgniter\Debug\{closure}()
+#5 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(109): CodeIgniter\Debug\BaseExceptionHandler->render(Object(Error), 500, 'D:\\project\\joba...')
+#6 D:\project\jobapp\Job-App\backend-Job-App\vendor\codeigniter4\framework\system\Debug\Exceptions.php(146): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#7 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#8 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 D:\project\jobapp\Job-App\backend-Job-App\public\index.php(67): CodeIgniter\CodeIgniter->initialize()
+#1 {main}
+in SYSTEMPATH\Helpers\number_helper.php on line 136.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-23 07:49:11 --> A non-numeric value encountered
+in APPPATH\Controllers\Api\ApiJob.php on line 27.
+ 1 APPPATH\Controllers\Api\ApiJob.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'D:\\project\\jobapp\\Job-App\\backend-Job-App\\app\\Controllers\\Api\\ApiJob.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-23 07:49:18 --> A non-numeric value encountered
+in APPPATH\Controllers\Api\ApiJob.php on line 27.
+ 1 APPPATH\Controllers\Api\ApiJob.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'D:\\project\\jobapp\\Job-App\\backend-Job-App\\app\\Controllers\\Api\\ApiJob.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

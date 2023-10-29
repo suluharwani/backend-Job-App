@@ -69,9 +69,27 @@ class ApiApplyJob extends BaseController
 		$db = new MdlApply;
 		$data = $db->getApplyDetail($id);
 		
-		return $this->response->setJSON( ['sucess'=> true, 'mesage' => 'OK', 'data' => $data] );
+		return $this->response->setJSON( ['success'=> true, 'mesage' => 'OK', 'data' => $data] );
 	}
-	
+	public function showUserApply($id)
+	{
+		$db = new MdlApply;
+		$data = $db->getApplyUser($id);
+		
+		return $this->response->setJSON( ['success'=> true, 'mesage' => 'OK', 'data' => $data] );
+	}
+	public function check($idUser, $idJob)
+	{
+		$db = new MdlApply;
+		$data = $db->where(array('id_user'=>$idUser, 'id_job'=> $idJob))->get()->getResult();
+
+		
+		if ($data) {
+		return $this->response->setJSON( ['success'=> true, 'mesage' => 'OK', 'data' => $data] );
+		}else{
+		return $this->response->setJSON(['success' => false, 'data' => null, "message" => \Config\Services::validation()->getErrors()]);
+		}
+	}
 	public function update($id)
 	{
 		if (! $this->validate([

@@ -44,6 +44,7 @@ class MdlJob extends Model
         parent::__construct();
         $this->db = \Config\Database::connect();
     }
+    
     public function getJobDetail($id)
     {
         $table = $this->table;

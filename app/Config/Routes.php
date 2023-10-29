@@ -30,8 +30,10 @@ $routes->group('api', ["filter" => ["cors", "auth"]], function ($routes) {
 	$routes->post('job', 'Api\ApiJob::create');
 	//apply
 	$routes->get('apply', 'Api\ApiApplyJob::index');
+	$routes->get('apply/check/(:num)/(:num)', 'Api\ApiApplyJob::check/$1/$2');
 	$routes->post('apply', 'Api\ApiApplyJob::create');
 	$routes->get('apply/(:num)', 'Api\ApiApplyJob::show/$1');
+	$routes->get('applyuser/(:num)', 'Api\ApiApplyJob::showUserApply/$1');
 	$routes->patch('apply/(:num)', 'Api\ApiApplyJob::update/$1');
 	$routes->delete('apply/(:num)', 'Api\ApiApplyJob::delete/$1');
 	$routes->get('apply/page', 'Api\ApiApplyJob::page');
