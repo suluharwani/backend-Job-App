@@ -23,6 +23,7 @@ $routes->group('api', ["filter" => ["cors", "auth"]], function ($routes) {
 	$routes->get('company/page', 'Api\ApiCompany::page');
 	//admin image
 	$routes->put("users/updateimageuser/(:num)", "Api\ResourceFile::updateImageUser/$1");
+	$routes->post("users/updatecvuser/(:num)", "Api\ResourceFile::updateCvUser/$1");
 
 	//job
 	$routes->patch('job/(:num)', 'Api\ApiJob::update/$1');

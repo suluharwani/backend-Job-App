@@ -62,3 +62,160 @@ in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
  4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('api/apply/check/1/1', 'before')
  5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 19:25:38 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Libraries\JWTCI4.php(68): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Filters\AuthFilter.php(39): App\Libraries\JWTCI4->parse(Object(CodeIgniter\HTTP\Header))
+ 3 SYSTEMPATH\Filters\Filters.php(180): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('api/apply/check/1/1', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 20:16:05 --> unlink(images/user/): Is a directory
+in APPPATH\Controllers\Api\ResourceFile.php on line 32.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(images/user/): Is a directory', 'D:\\project\\jobapp\\Job-App\\backend-Job-App\\app\\Controllers\\Api\\ResourceFile.php', 32)
+ 2 APPPATH\Controllers\Api\ResourceFile.php(32): unlink('images/user/')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ResourceFile->updateImageUser('1')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ResourceFile))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 21:11:23 --> Undefined array key "file_cv"
+in APPPATH\Controllers\Api\ResourceFile.php on line 128.
+ 1 APPPATH\Controllers\Api\ResourceFile.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "file_cv"', 'D:\\project\\jobapp\\Job-App\\backend-Job-App\\app\\Controllers\\Api\\ResourceFile.php', 128)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ResourceFile->updateCvUser('1')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ResourceFile))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 21:20:22 --> Class "App\Controllers\Api\MdlFilecv" not found
+in APPPATH\Controllers\Api\ResourceFile.php on line 123.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ResourceFile->updateCvUser('1')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ResourceFile))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 21:20:52 --> Undefined array key 0
+in APPPATH\Controllers\Api\ResourceFile.php on line 129.
+ 1 APPPATH\Controllers\Api\ResourceFile.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'D:\\project\\jobapp\\Job-App\\backend-Job-App\\app\\Controllers\\Api\\ResourceFile.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ResourceFile->updateCvUser('1')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ResourceFile))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 21:31:00 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResults()
+in APPPATH\Controllers\Api\ResourceFile.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ResourceFile->updateCvUser('1')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ResourceFile))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 21:34:05 --> Undefined variable $oldfile
+in APPPATH\Controllers\Api\ResourceFile.php on line 157.
+ 1 APPPATH\Controllers\Api\ResourceFile.php(157): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $oldfile', 'D:\\project\\jobapp\\Job-App\\backend-Job-App\\app\\Controllers\\Api\\ResourceFile.php', 157)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ResourceFile->updateCvUser('1')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ResourceFile))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 22:27:55 --> Call to a member function getName() on null
+in APPPATH\Controllers\Api\ResourceFile.php on line 116.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ResourceFile->updateCvUser('1')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ResourceFile))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 22:28:11 --> Call to a member function getName() on null
+in APPPATH\Controllers\Api\ResourceFile.php on line 116.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ResourceFile->updateCvUser('1')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ResourceFile))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 22:28:28 --> Call to a member function getName() on null
+in APPPATH\Controllers\Api\ResourceFile.php on line 116.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ResourceFile->updateCvUser('1')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ResourceFile))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 22:29:35 --> Call to a member function getName() on null
+in APPPATH\Controllers\Api\ResourceFile.php on line 116.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ResourceFile->updateCvUser('1')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ResourceFile))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 22:30:13 --> Call to a member function getName() on null
+in APPPATH\Controllers\Api\ResourceFile.php on line 116.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ResourceFile->updateCvUser('1')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ResourceFile))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 22:31:39 --> Call to a member function getName() on null
+in APPPATH\Controllers\Api\ResourceFile.php on line 116.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ResourceFile->updateCvUser('1')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ResourceFile))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 22:35:41 --> Call to a member function getName() on null
+in APPPATH\Controllers\Api\ResourceFile.php on line 116.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ResourceFile->updateCvUser('1')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ResourceFile))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 22:35:58 --> Call to a member function getName() on null
+in APPPATH\Controllers\Api\ResourceFile.php on line 116.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ResourceFile->updateCvUser('1')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ResourceFile))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 22:36:43 --> Call to a member function getName() on null
+in APPPATH\Controllers\Api\ResourceFile.php on line 116.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ResourceFile->updateCvUser('1')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ResourceFile))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 22:41:44 --> Call to a member function getName() on null
+in APPPATH\Controllers\Api\ResourceFile.php on line 116.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ResourceFile->updateCvUser('1')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ResourceFile))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 22:41:48 --> Call to a member function getName() on null
+in APPPATH\Controllers\Api\ResourceFile.php on line 116.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ResourceFile->updateCvUser('1')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ResourceFile))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 22:42:34 --> Call to a member function getName() on null
+in APPPATH\Controllers\Api\ResourceFile.php on line 116.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ResourceFile->updateCvUser('1')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ResourceFile))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 22:43:24 --> Call to a member function getName() on null
+in APPPATH\Controllers\Api\ResourceFile.php on line 116.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ResourceFile->updateCvUser('1')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ResourceFile))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 22:44:45 --> Call to a member function getName() on null
+in APPPATH\Controllers\Api\ResourceFile.php on line 116.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ResourceFile->updateCvUser('1')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ResourceFile))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 22:46:06 --> Call to a member function getName() on null
+in APPPATH\Controllers\Api\ResourceFile.php on line 116.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ResourceFile->updateCvUser('1')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ResourceFile))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 22:48:16 --> Call to a member function getName() on null
+in APPPATH\Controllers\Api\ResourceFile.php on line 116.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ResourceFile->updateCvUser('1')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ResourceFile))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 22:52:01 --> Call to a member function getName() on null
+in APPPATH\Controllers\Api\ResourceFile.php on line 116.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ResourceFile->updateCvUser('1')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ResourceFile))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 22:52:03 --> Call to a member function getName() on null
+in APPPATH\Controllers\Api\ResourceFile.php on line 116.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ResourceFile->updateCvUser('1')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ResourceFile))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
