@@ -8,6 +8,7 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 //auth user
 $routes->group('api', ["filter" => ["cors", "auth"]], function ($routes) {
+
 	//user
 	$routes->get('users', 'Api\ApiUser::index');
 	$routes->get('users/(:num)', 'Api\ApiUser::show/$1');
@@ -38,9 +39,18 @@ $routes->group('api', ["filter" => ["cors", "auth"]], function ($routes) {
 	$routes->patch('apply/(:num)', 'Api\ApiApplyJob::update/$1');
 	$routes->delete('apply/(:num)', 'Api\ApiApplyJob::delete/$1');
 	$routes->get('apply/page', 'Api\ApiApplyJob::page');
+	//api data pelamar
+	$routes->post('datapelamar', 'Api\ApiDataPelamar::create');
+	$routes->patch('datapelamar/(:num)', 'Api\ApiDataPelamar::update/$1');
+	$routes->delete('datapelamar/(:num)', 'Api\ApiDataPelamar::delete/$1');
+	//api data pendidikan pelamar
+	$routes->post('pendidikan', 'Api\ApiPendidikanPelamar::create');
+	$routes->patch('pendidikan/(:num)', 'Api\ApiPendidikanPelamar::update/$1');
+	$routes->delete('pendidikan/(:num)', 'Api\ApiPendidikanPelamar::delete/$1');
 });
 //auth admin
 $routes->group('api', ["filter" => ["cors", "authadmin"]], function ($routes) {
+
 	//admin
 	$routes->get('admin', 'Api\ApiAdmin::index');
 	$routes->post('admin', 'Api\ApiAdmin::create');
@@ -60,6 +70,8 @@ $routes->group('api', ["filter" => ["cors", "authadmin"]], function ($routes) {
 
 // tanpa validasi auth user dan admin
 $routes->group('api', ["filter" => ["cors"]], function ($routes) {
+	// show file
+	$routes->get("users/file/(:any)", "Api\ResourceFile::show/$1");
 	// reg
 	$routes->post('users', 'Api\ApiUser::create');
 	//login
@@ -71,5 +83,11 @@ $routes->group('api', ["filter" => ["cors"]], function ($routes) {
 	$routes->get('job/(:num)', 'Api\ApiJob::show/$1');
 	$routes->get('job/page', 'Api\ApiJob::page');
 	$routes->get('job/find', 'Api\ApiJob::find');
+
+	$routes->get('datapelamar/(:num)', 'Api\ApiDataPelamar::show/$1');
+	$routes->get('datapelamar', 'Api\ApiDataPelamar::index');
+
+	$routes->get('pendidikan', 'Api\ApiPendidikanPelamar::index');
+	$routes->get('pendidikan/(:num)', 'Api\ApiPendidikanPelamar::show/$1');
 
 });

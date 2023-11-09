@@ -1,0 +1,17 @@
+CRITICAL - 2023-11-09 05:02:26 --> syntax error, unexpected variable "$insert"
+in APPPATH\Controllers\Api\ApiDataPelamar.php on line 61.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\project\\jobapp\\Job-App\\backend-Job-App\\app\\Controllers\\Api\\ApiDataPelamar.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Api\\ApiDataPelamar')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Api\\ApiDataPelamar')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Api\\ApiDataPelamar', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 05:16:48 --> Key material must be a string, resource, or OpenSSLAsymmetricKey
+in VENDORPATH\firebase\php-jwt\src\Key.php on line 31.
+ 1 APPPATH\Libraries\JWTCI4.php(68): Firebase\JWT\Key->__construct(false, 'HS256')
+ 2 APPPATH\Filters\AuthFilter.php(39): App\Libraries\JWTCI4->parse(Object(CodeIgniter\HTTP\Header))
+ 3 SYSTEMPATH\Filters\Filters.php(180): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('api/datapelamar', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

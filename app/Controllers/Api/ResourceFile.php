@@ -9,6 +9,25 @@ use App\Models\MdlFilecv;
 
 class ResourceFile extends ResourceController
 {
+	    public function show($id_user=null)
+    {
+    	$db = new MdlFilecv();
+    	$filename = $db->where('id_user', $id_user)->get()->getResultArray();
+    	if (count($filename)==0) {
+    		return $this->response->setStatusCode(404, 'File not found');
+
+    	}
+        $path = ROOTPATH . 'public/file/user/' . $filename[0]['name'];
+        //     var_dump($path);
+        // die();
+        if ( is_file($path) && file_exists($path)) {
+            $file = file_get_contents($path);
+
+            return $this->response->setContentType('application/pdf')->setBody($file);
+        } else {
+        	 return $this->response->setStatusCode(404, 'File not found');
+        }
+    }
 	public function updateImageUser($id)
 	{
 		$file = $this->request->getFile('profile_picture');
