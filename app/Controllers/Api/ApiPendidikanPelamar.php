@@ -58,26 +58,40 @@ class ApiPendidikanPelamar extends BaseController
 			return $this->response->setJSON(['success' => false, 'data' => null, "message" => \Config\Services::validation()->getErrors()]);
 		}
 
+		$id = $this->request->getVar('id_user');
+		$jenjang = $this->request->getVar('jenjang');
 		$insert = [
-            'jenjang' => $this->request->getVar('jenjang'),
+            'jenjang' => $jenjang,
 			'lembaga' => $this->request->getVar('lembaga'),
 			'tahun_lulus' => $this->request->getVar('tahun_lulus'),
-			'id_user' => $this->request->getVar('id_user'),
+			'id_user' => $id,
 	
         ];
 		
 		$db = new MdlDataPendidikanPelamar;
-		$save  = $db->insert($insert);
+		// $save  = $db->insert($insert);
 		
-		return $this->setResponseFormat('json')->respondCreated( ['sucess'=> true, 'mesage' => 'OK'] );
+		$messages = "Gagal";
+		
+		if ($db->where(array('id_user'=>$id, 'jenjang'=>$jenjang))->countAllResults() >0 ) {
+			$save  = $db->where(array('id_user'=>$id, 'jenjang'=>$jenjang))->set($insert)->update();
+
+			$messages = "Data berhasil diupdate";
+		}else{
+
+			$save  = $db->insert($insert);
+			$messages = "Data berhasil ditambahkan";
+
+		}
+		return $this->response->setJSON( ['success'=> $save, 'message' => $messages, 'data' => $insert] );
 	}
 	
 	public function show($id)
 	{
 		$db = new MdlDataPendidikanPelamar;
-		$data = $db->where('id_user', $id)->get();
+		$data = json_encode($db->where('id_user', $id)->get()->getResultArray());
 		
-		return $this->response->setJSON( ['sucess'=> true, 'mesage' => 'OK', 'data' => $data] );
+		return $this->response->setJSON( ['success'=> true, 'mesage' => 'OK', 'data' => $data] );
 	}
 
 	public function update($id)
