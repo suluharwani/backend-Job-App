@@ -25,6 +25,11 @@ class ApplyJob extends Migration
                 'constraint' => 10,
                 'null' => true,
             ],
+            'status_lamaran' => [
+                'type' => 'INT',
+                'constraint' => 4,
+                'null' => true,
+            ],
             'updated_at' => [
                 'type' => 'datetime',
                 'null' => true,

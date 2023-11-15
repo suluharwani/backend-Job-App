@@ -75,7 +75,7 @@ class ApiCompany extends BaseController
 		$db = new MdlCompany;
 		$data = $db->where('id', $id)->first();
 		
-		return $this->response->setJSON( ['sucess'=> true, 'mesage' => 'OK', 'data' => $data] );
+		return $this->response->setJSON( ['success'=> true, 'mesage' => 'OK', 'data' => json_encode($data)] );
 	}
 
 	public function update($id)

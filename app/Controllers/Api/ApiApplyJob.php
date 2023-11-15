@@ -63,6 +63,27 @@ class ApiApplyJob extends BaseController
 		
 		return $this->setResponseFormat('json')->respondCreated( ['sucess'=> true, 'mesage' => 'OK'] );
 	}
+		public function updateStatus()
+	{
+		if( !$this->validate([
+
+			'id_user' 	=> 'required',
+			'id_job'	   	=> 'required',
+			'status_lamaran'	   	=> 'required',
+		]))
+		{
+			return $this->response->setJSON(['success' => false, 'data' => null, "message" => \Config\Services::validation()->getErrors()]);
+		}
+		$where['id_job'] = $this->request->getVar('id_job');
+		$where['id_user'] = $this->request->getVar('id_user');
+		$data['status_lamaran'] = $this->request->getVar('status_lamaran');
+		
+		$db = new MdlApply;
+		$update  = $db->where($where)->set($data)->update();
+		if ($db->affectedRows()!=0) {
+			return $this->response->setJSON( ['success'=> true, 'mesage' => 'OK'] );
+		}
+	}
 	
 	public function show($id)
 	{
@@ -76,7 +97,14 @@ class ApiApplyJob extends BaseController
 		$db = new MdlApply;
 		$data = $db->getApplyUser($id);
 		
-		return $this->response->setJSON( ['success'=> true, 'mesage' => 'OK', 'data' => $data] );
+		return $this->response->setJSON( ['success'=> true, 'mesage' => 'OK', 'data' => json_encode($data)] );
+	}
+		public function showApplicant($id_job)
+	{
+		$db = new MdlApply;
+		$data = $db->getApplicant($id_job);
+		
+		return $this->response->setJSON( ['success'=> true, 'mesage' => 'OK', 'data' => json_encode($data)] );
 	}
 	public function check($idUser, $idJob)
 	{

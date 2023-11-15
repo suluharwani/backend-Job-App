@@ -1,0 +1,18 @@
+CRITICAL - 2023-11-13 06:29:00 --> Call to a member function getResultArray() on null
+in APPPATH\Controllers\Api\ApiLocation.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ApiLocation->prov()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiLocation))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-13 06:29:23 --> Call to undefined method App\Controllers\Api\ApiLocation::respond()
+in APPPATH\Controllers\Api\ApiLocation.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ApiLocation->prov()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiLocation))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-13 06:29:44 --> Call to undefined method App\Controllers\Api\ApiLocation::json_encode()
+in APPPATH\Controllers\Api\ApiLocation.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Api\ApiLocation->prov()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiLocation))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

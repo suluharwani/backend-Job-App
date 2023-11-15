@@ -11,7 +11,7 @@ class MdlJob extends Model
     protected $primaryKey = 'id';
     protected $useAutoIncrement = true;
     protected $returnType = 'array';
-    protected $useSoftDeletes = true;
+    protected $useSoftDeletes = false;
     protected $protectFields = true;
     protected $allowedFields = ['id', 'company_id', 'cat_id', 'subcat_id', 'prov_id', 'city_id', 'address', 'postal_code', 'job', 'job_desc', 'benefits', 'minimum_qualification', 'facility', 'open_for', 'salary_start', 'salary_end', 'status', 'start', 'due', 'updated_at', 'deleted_at', 'created_at'];
     

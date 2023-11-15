@@ -13,7 +13,7 @@ class MdlApply extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = true;
     protected $protectFields    = true;
-    protected $allowedFields    = ["id","id_user","id_job","created_at","deleted_at","updated_at"];
+    protected $allowedFields    = ["id","id_user","id_job","status_lamaran","created_at","deleted_at","updated_at"];
     
     // Dates
     protected $useTimestamps = true;
@@ -53,6 +53,7 @@ class MdlApply extends Model
             {$table}.id,
             {$table}.id_user,
             {$table}.id_job,
+            {$table}.status_lamaran,
             {$table}.updated_at,
             {$table}.deleted_at,
             {$table}.created_at,
@@ -99,6 +100,7 @@ class MdlApply extends Model
             {$table}.id,
             {$table}.id_user,
             {$table}.id_job,
+            {$table}.status_lamaran,
             {$table}.updated_at,
             {$table}.deleted_at,
             {$table}.created_at,
@@ -145,6 +147,59 @@ class MdlApply extends Model
             {$table}.id,
             {$table}.id_user,
             {$table}.id_job,
+            {$table}.status_lamaran,
+            {$table}.updated_at,
+            {$table}.deleted_at,
+            {$table}.created_at,
+            
+            job.company_id,
+            job.cat_id,
+            job.subcat_id,
+            job.prov_id,
+            job.city_id,
+            job.address,
+            job.postal_code,
+            job.job,
+            job.job_desc,
+            job.benefits,
+            job.minimum_qualification,
+            job.facility,
+            job.open_for,
+            job.salary_start,
+            job.salary_end,
+            job.status,
+            job.start,
+            job.due,
+            
+            user.firstname,
+            user.lastname,
+            user.email,
+            user.level,
+            user.status,
+
+            datapelamar.alamat,
+            datapelamar.telepon,
+
+            "
+            )
+            ->join('job', "{$table}.id_job = job.id ", 'left')
+            ->join('user', "{$table}.id_user = user.id ", 'left')
+            ->join('datapelamar', "{$table}.id_user = datapelamar.id_user ", 'left')
+            ->where(array("{$table}.id_user"=> $id, "{$table}.deleted_at"=>null))
+            ->get()
+            ->getResultArray();
+        return $data;
+    }
+            public function getApplicant($id=null)
+    {
+        $table = $this->table;
+        $data = $this->db->table($table)
+            ->select(
+                "
+            {$table}.id,
+            {$table}.id_user,
+            {$table}.id_job,
+            {$table}.status_lamaran,
             {$table}.updated_at,
             {$table}.deleted_at,
             {$table}.created_at,
@@ -177,7 +232,7 @@ class MdlApply extends Model
             )
             ->join('job', "{$table}.id_job = job.id ", 'left')
             ->join('user', "{$table}.id_user = user.id ", 'left')
-            ->where(array("{$table}.id_user"=> $id, "{$table}.deleted_at"=>null))
+            ->where(array("{$table}.id_job"=> $id, "{$table}.deleted_at"=>null))
             ->get()
             ->getResult();
         return $data;

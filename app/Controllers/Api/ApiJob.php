@@ -72,8 +72,7 @@ public function page()
 		if (
 			!$this->validate([
 				'company_id' => 'required',
-				'cat_id' => 'required',
-				'subcat_id' => 'required',
+
 				'prov_id' => 'required',
 				'city_id' => 'required',
 				'address' => 'required',
@@ -100,9 +99,14 @@ public function page()
 		$db = new MdlJob;
 		$save = $db->insert($insert);
 		
-		return $this->setResponseFormat('json')->respondCreated(['sucess' => true, 'mesage' => 'OK']);
+		return $this->setResponseFormat('json')->respondCreated(['success' => true, 'mesage' => 'OK']);
 	}
-	
+	public function jobByCompany($id){
+		$db = new MdlJob;
+		$data = $db->where('company_id',$id)->get()->getResultArray();
+         return $this->response->setJSON(['success' => true, 'mesage' => 'OK', 'data' => json_encode($data)]);
+
+	}
 	public function show($id)
 	{
 		$db = new MdlJob;
@@ -146,8 +150,12 @@ public function page()
 		$db = new MdlJob;
 		$db->where('id', $id);
 		$db->delete();
-
-		return $this->response->setJSON(['sucess' => true, 'message' => 'OK']);
+		if ($db->affectedRows()!=0) {
+			return $this->response->setJSON(['success' => true, 'message' => 'OK']);
+		}else{
+		return $this->response->setJSON(['success' => false, "message" => \Config\Services::validation()->getErrors()]);
+			
+		}
 	}
 
 }

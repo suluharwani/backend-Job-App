@@ -1,10 +1,9 @@
 <?php
-
-namespace App\Controllers;
-
-use CodeIgniter\RESTful\ResourceController;
-
-class ApiLocation extends ResourceController
+namespace App\Controllers\Api;
+use App\Controllers\BaseController;
+use App\Models\MdlProvinsi;
+use App\Models\MdlKota;
+class ApiLocation extends BaseController
 {
     /**
      * Return an array of resource objects, themselves in array format
@@ -15,7 +14,20 @@ class ApiLocation extends ResourceController
     {
         //
     }
+    function prov()  {
+        $db = new MdlProvinsi;
+        // $data = $db->where('id', $id)->first();
+        $data = $db->get()->getResultArray();
+        return $this->response->setJSON(['sucess' => true, 'mesage' => 'OK', 'data' => json_encode($data)]);
 
+    }
+    function getcities($prov_id)  {
+        $db = new MdlKota;
+        // $data = $db->where('id', $id)->first();
+        $data = $db->where('prov_id',$prov_id)->get()->getResultArray();
+         return $this->response->setJSON(['sucess' => true, 'mesage' => 'OK', 'data' => json_encode($data)]);
+        // return $this->response->setJSON(['sucess' => true, 'mesage' => 'OK', 'data' => $data]);
+    }
     /**
      * Return the properties of a resource object
      *

@@ -9,6 +9,7 @@ $routes->get('/', 'Home::index');
 //auth user
 $routes->group('api', ["filter" => ["cors", "auth"]], function ($routes) {
 
+
 	//user
 	$routes->get('users', 'Api\ApiUser::index');
 	$routes->get('users/(:num)', 'Api\ApiUser::show/$1');
@@ -30,12 +31,17 @@ $routes->group('api', ["filter" => ["cors", "auth"]], function ($routes) {
 	$routes->patch('job/(:num)', 'Api\ApiJob::update/$1');
 	$routes->delete('job/(:num)', 'Api\ApiJob::delete/$1');
 	$routes->post('job', 'Api\ApiJob::create');
+	$routes->get('jobcompany/(:any)', 'Api\ApiJob::jobByCompany/$1');
+	
 	//apply
+
+	$routes->post('updatestatus', 'Api\ApiApplyJob::updateStatus');
 	$routes->get('apply', 'Api\ApiApplyJob::index');
 	$routes->get('apply/check/(:num)/(:num)', 'Api\ApiApplyJob::check/$1/$2');
 	$routes->post('apply', 'Api\ApiApplyJob::create');
 	$routes->get('apply/(:num)', 'Api\ApiApplyJob::show/$1');
 	$routes->get('applyuser/(:num)', 'Api\ApiApplyJob::showUserApply/$1');
+	$routes->get('applicant/(:num)', 'Api\ApiApplyJob::showApplicant/$1');
 	$routes->patch('apply/(:num)', 'Api\ApiApplyJob::update/$1');
 	$routes->delete('apply/(:num)', 'Api\ApiApplyJob::delete/$1');
 	$routes->get('apply/page', 'Api\ApiApplyJob::page');
@@ -70,6 +76,9 @@ $routes->group('api', ["filter" => ["cors", "authadmin"]], function ($routes) {
 
 // tanpa validasi auth user dan admin
 $routes->group('api', ["filter" => ["cors"]], function ($routes) {
+		//location
+	$routes->get('provinces', 'Api\ApiLocation::prov');
+	$routes->get('cities/(:any)', 'Api\ApiLocation::getcities/$1');
 	// show file
 	$routes->get("users/file/(:any)", "Api\ResourceFile::show/$1");
 	// reg
