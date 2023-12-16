@@ -35,3 +35,157 @@ in APPPATH/Controllers/Api/ApiJob.php on line 44.
  2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
  3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 09:50:10 --> count(): Argument #1 ($value) must be of type Countable|array, App\Models\MdlJob given
+in APPPATH/Controllers/Api/ApiJob.php on line 44.
+ 1 APPPATH/Controllers/Api/ApiJob.php(44): count(Object(App\Models\MdlJob))
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 09:50:16 --> count(): Argument #1 ($value) must be of type Countable|array, App\Models\MdlJob given
+in APPPATH/Controllers/Api/ApiJob.php on line 44.
+ 1 APPPATH/Controllers/Api/ApiJob.php(44): count(Object(App\Models\MdlJob))
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 09:50:57 --> count(): Argument #1 ($value) must be of type Countable|array, App\Models\MdlJob given
+in APPPATH/Controllers/Api/ApiJob.php on line 44.
+ 1 APPPATH/Controllers/Api/ApiJob.php(44): count(Object(App\Models\MdlJob))
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 09:51:51 --> Call to undefined method App\Models\MdlJob::getResultArray
+in SYSTEMPATH/Model.php on line 873.
+ 1 APPPATH/Controllers/Api/ApiJob.php(44): CodeIgniter\Model->__call('getResultArray', [])
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 09:53:06 --> Call to a member function get() on array
+in APPPATH/Controllers/Api/ApiJob.php on line 43.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 09:53:15 --> Call to a member function getResultArray() on array
+in APPPATH/Controllers/Api/ApiJob.php on line 43.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 09:53:24 --> Call to a member function get() on array
+in APPPATH/Controllers/Api/ApiJob.php on line 43.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 10:06:31 --> count(): Argument #1 ($value) must be of type Countable|array, CodeIgniter\Database\MySQLi\Result given
+in APPPATH/Controllers/Api/ApiJob.php on line 44.
+ 1 APPPATH/Controllers/Api/ApiJob.php(44): count(Object(CodeIgniter\Database\MySQLi\Result))
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 10:11:40 --> count(): Argument #1 ($value) must be of type Countable|array, CodeIgniter\Database\MySQLi\Result given
+in APPPATH/Controllers/Api/ApiJob.php on line 44.
+ 1 APPPATH/Controllers/Api/ApiJob.php(44): count(Object(CodeIgniter\Database\MySQLi\Result))
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 10:16:39 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAll()
+in APPPATH/Controllers/Api/ApiJob.php on line 46.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 10:16:56 --> Call to a member function countAll() on array
+in APPPATH/Controllers/Api/ApiJob.php on line 46.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 10:24:33 --> syntax error, unexpected token "(", expecting identifier or variable or "{" or "$"
+in APPPATH/Controllers/Api/ApiJob.php on line 46.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('/Users/suluh/Documents/Project/backend-Job-App-main/app/Controllers/Api/ApiJob.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Api\\ApiJob')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Api\\ApiJob')
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\Api\\ApiJob', true)
+ 5 SYSTEMPATH/CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 10:29:07 --> Undefined variable $totalElements
+in APPPATH/Controllers/Api/ApiJob.php on line 50.
+ 1 APPPATH/Controllers/Api/ApiJob.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalElements', '/Users/suluh/Documents/Project/backend-Job-App-main/app/Controllers/Api/ApiJob.php', 50)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 10:30:16 --> Unsupported operand types: array / string
+in APPPATH/Controllers/Api/ApiJob.php on line 51.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 10:33:38 --> Undefined variable $el
+in APPPATH/Controllers/Api/ApiJob.php on line 48.
+ 1 APPPATH/Controllers/Api/ApiJob.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $el', '/Users/suluh/Documents/Project/backend-Job-App-main/app/Controllers/Api/ApiJob.php', 48)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 10:33:47 --> Undefined variable $el
+in APPPATH/Controllers/Api/ApiJob.php on line 48.
+ 1 APPPATH/Controllers/Api/ApiJob.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $el', '/Users/suluh/Documents/Project/backend-Job-App-main/app/Controllers/Api/ApiJob.php', 48)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 10:34:05 --> Undefined variable $el
+in APPPATH/Controllers/Api/ApiJob.php on line 48.
+ 1 APPPATH/Controllers/Api/ApiJob.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $el', '/Users/suluh/Documents/Project/backend-Job-App-main/app/Controllers/Api/ApiJob.php', 48)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 10:34:15 --> Undefined variable $el
+in APPPATH/Controllers/Api/ApiJob.php on line 48.
+ 1 APPPATH/Controllers/Api/ApiJob.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $el', '/Users/suluh/Documents/Project/backend-Job-App-main/app/Controllers/Api/ApiJob.php', 48)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 10:45:23 --> Undefined variable $el
+in APPPATH/Controllers/Api/ApiJob.php on line 50.
+ 1 APPPATH/Controllers/Api/ApiJob.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $el', '/Users/suluh/Documents/Project/backend-Job-App-main/app/Controllers/Api/ApiJob.php', 50)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 10:45:54 --> Undefined variable $el
+in APPPATH/Controllers/Api/ApiJob.php on line 50.
+ 1 APPPATH/Controllers/Api/ApiJob.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $el', '/Users/suluh/Documents/Project/backend-Job-App-main/app/Controllers/Api/ApiJob.php', 50)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 10:51:47 --> Call to a member function getResult() on array
+in APPPATH/Controllers/Api/ApiJob.php on line 51.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 10:51:59 --> Call to a member function getResult() on array
+in APPPATH/Controllers/Api/ApiJob.php on line 51.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 10:53:08 --> Object of type App\Models\MdlJob is not callable
+in APPPATH/Controllers/Api/ApiJob.php on line 49.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

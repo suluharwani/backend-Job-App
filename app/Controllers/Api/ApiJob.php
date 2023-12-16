@@ -16,7 +16,6 @@ class ApiJob extends BaseController
 		$data = $db->get()->getResult();
 		return $this->response->setJSON(['sucess' => true, 'mesage' => 'OK', 'data' => $data]);
 	}
-
 public function page()
 {
     $db = new MdlJob;
@@ -30,18 +29,23 @@ public function page()
     $s = str_replace('+', ' ', $s);
 
     if ($s !== '') {
-    	// var_dump($s);die();
-        $data = $db
+        // var_dump($s);die();
+        $query = $db
             ->groupStart()
                 ->like('job', $s)
                 ->orLike('job_desc', $s)
             ->groupEnd()
-            ->orderBy('id', 'DESC')->paginate($size, 'default', $offset);
+            ->orderBy('id', 'DESC');
+
     } else {
-        $data = $db->orderBy('id', 'DESC')->paginate($size, 'default', $offset);
+        $query = $db->orderBy('id', 'DESC');
     }
 
-    $totalElements = count($data);
+    // Clone query before pagination
+    $countQuery = clone $query;
+    $totalElements = $countQuery->countAllResults(false); 
+
+    $data = $query->paginate($size, 'default', $offset);
 
     $number = ($page <= 0) ? null : $page;
     $totalPages = ($size <= 0) ? null : ceil($totalElements / $size);
@@ -64,6 +68,7 @@ public function page()
 
     return $this->respond(json_encode($response));
 }
+
 
 
 
