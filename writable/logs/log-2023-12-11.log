@@ -1,0 +1,149 @@
+ERROR - 2023-12-11 07:56:12 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'jobseeker', 3306, '', 0)
+#1 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/suluh/Documents/Project/backend-Job-App-main/app/Controllers/Api/ResourceFile.php(15): CodeIgniter\Model->__call('get', Array)
+#6 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\Api\ResourceFile->show('1')
+#7 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ResourceFile))
+#8 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/suluh/Documents/Project/backend-Job-App-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/suluh/Documents/Project/backend-Job-App-main/app/Controllers/Api/ResourceFile.php(15): CodeIgniter\Model->__call('get', Array)
+#5 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\Api\ResourceFile->show('1')
+#6 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ResourceFile))
+#7 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/suluh/Documents/Project/backend-Job-App-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-11 07:56:12 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `filecv`
+WHERE `id_user` = :id_user:', [...], false)
+ 3 SYSTEMPATH/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Api/ResourceFile.php(15): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Api\ResourceFile->show('1')
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ResourceFile))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-11 07:56:50 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'jobseeker', 3306, '', 0)
+#1 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/suluh/Documents/Project/backend-Job-App-main/app/Controllers/Api/ApiApplyJob.php(112): CodeIgniter\Model->__call('get', Array)
+#6 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\Api\ApiApplyJob->check('1', '1')
+#7 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiApplyJob))
+#8 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/suluh/Documents/Project/backend-Job-App-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/suluh/Documents/Project/backend-Job-App-main/app/Controllers/Api/ApiApplyJob.php(112): CodeIgniter\Model->__call('get', Array)
+#5 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\Api\ApiApplyJob->check('1', '1')
+#6 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiApplyJob))
+#7 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/suluh/Documents/Project/backend-Job-App-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-11 07:56:50 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `apply`
+WHERE `id_user` = :id_user:
+AND `id_job` = :id_job:', [...], false)
+ 3 SYSTEMPATH/Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Api/ApiApplyJob.php(112): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Api\ApiApplyJob->check('1', '1')
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiApplyJob))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-11 07:57:01 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'jobseeker', 3306, '', 0)
+#1 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `apply`....', Array, false)
+#4 /Users/suluh/Documents/Project/backend-Job-App-main/app/Models/MdlApply.php(137): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/suluh/Documents/Project/backend-Job-App-main/app/Controllers/Api/ApiApplyJob.php(91): App\Models\MdlApply->getApplyDetail('1')
+#6 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\Api\ApiApplyJob->show('1')
+#7 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiApplyJob))
+#8 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/suluh/Documents/Project/backend-Job-App-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `apply`....', Array, false)
+#3 /Users/suluh/Documents/Project/backend-Job-App-main/app/Models/MdlApply.php(137): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/suluh/Documents/Project/backend-Job-App-main/app/Controllers/Api/ApiApplyJob.php(91): App\Models\MdlApply->getApplyDetail('1')
+#5 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/CodeIgniter.php(919): App\Controllers\Api\ApiApplyJob->show('1')
+#6 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiApplyJob))
+#7 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/suluh/Documents/Project/backend-Job-App-main/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-11 07:57:01 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `apply`.`id`, `apply`.`id_user`, `apply`.`id_job`, `apply`.`status_lamaran`, `apply`.`updated_at`, `apply`.`deleted_at`, `apply`.`created_at`, `job`.`company_id`, `job`.`cat_id`, `job`.`subcat_id`, `job`.`prov_id`, `job`.`city_id`, `job`.`address`, `job`.`postal_code`, `job`.`job`, `job`.`job_desc`, `job`.`benefits`, `job`.`minimum_qualification`, `job`.`facility`, `job`.`open_for`, `job`.`salary_start`, `job`.`salary_end`, `job`.`status`, `job`.`start`, `job`.`due`, `user`.`firstname`, `user`.`lastname`, `user`.`email`, `user`.`level`, `user`.`status`
+FROM `apply`
+LEFT JOIN `job` ON `apply`.`id_job` = `job`.`id`
+LEFT JOIN `user` ON `apply`.`id_user` = `user`.`id`
+WHERE `apply`.`id` = :apply.id:
+AND `apply`.`deleted_at` IS NULL', [...], false)
+ 3 APPPATH/Models/MdlApply.php(137): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Api/ApiApplyJob.php(91): App\Models\MdlApply->getApplyDetail('1')
+ 5 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Api\ApiApplyJob->show('1')
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiApplyJob))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-11 08:58:57 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'jobseeker', 3306, '', 0)
+#1 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#5 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 /Users/suluh/Documents/Project/backend-Job-App-main/spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#4 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 /Users/suluh/Documents/Project/backend-Job-App-main/vendor/codeigniter4/framework/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 /Users/suluh/Documents/Project/backend-Job-App-main/spark(102): CodeIgniter\CLI\Console->run()
+#10 {main}

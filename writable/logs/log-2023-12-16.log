@@ -1,0 +1,37 @@
+CRITICAL - 2023-12-16 09:24:19 --> Call to undefined function App\Controllers\Api\parseInt()
+in APPPATH/Controllers/Api/ApiJob.php on line 49.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 09:27:37 --> Call to a member function countAll() on array
+in APPPATH/Controllers/Api/ApiJob.php on line 44.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 09:28:07 --> Call to a member function count() on array
+in APPPATH/Controllers/Api/ApiJob.php on line 44.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 09:29:33 --> Call to undefined method App\Models\MdlJob::numRows
+in SYSTEMPATH/Model.php on line 873.
+ 1 APPPATH/Controllers/Api/ApiJob.php(44): CodeIgniter\Model->__call('numRows', [])
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 09:30:45 --> Call to a member function countAllResults() on array
+in APPPATH/Controllers/Api/ApiJob.php on line 44.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 09:30:56 --> Call to a member function count() on array
+in APPPATH/Controllers/Api/ApiJob.php on line 44.
+ 1 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Api\ApiJob->page()
+ 2 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiJob))
+ 3 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

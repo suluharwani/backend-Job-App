@@ -41,12 +41,12 @@ public function page()
         $data = $db->orderBy('id', 'DESC')->paginate($size, 'default', $offset);
     }
 
-    $totalElements = $db->countAll();
+    $totalElements = count($data);
 
     $number = ($page <= 0) ? null : $page;
     $totalPages = ($size <= 0) ? null : ceil($totalElements / $size);
-    $firstPage = ($number === 1);
-    $lastPage = ($number === $totalPages);
+    $firstPage = (intval($number) === 1);
+    $lastPage = (intval($number) === intval($totalPages));
 
     //json response
     $response = [
